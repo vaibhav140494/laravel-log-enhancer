@@ -1,8 +1,8 @@
-[![Latest Stable Version](https://poser.pugx.org/freshbitsweb/laravel-log-enhancer/v/stable)](https://packagist.org/packages/freshbitsweb/laravel-log-enhancer)
-[![Total Downloads](https://poser.pugx.org/freshbitsweb/laravel-log-enhancer/downloads)](https://packagist.org/packages/freshbitsweb/laravel-log-enhancer)
-[![License](https://poser.pugx.org/freshbitsweb/laravel-log-enhancer/license)](https://packagist.org/packages/freshbitsweb/laravel-log-enhancer)
+[![Latest Stable Version](https://poser.pugx.org/vaibhav/laravel-log-enhancer/v/stable)](https://packagist.org/packages/vaibhav/laravel-log-enhancer)
+[![Total Downloads](https://poser.pugx.org/vaibhav/laravel-log-enhancer/downloads)](https://packagist.org/packages/vaibhav/laravel-log-enhancer)
+[![License](https://poser.pugx.org/vaibhav/laravel-log-enhancer/license)](https://packagist.org/packages/vaibhav/laravel-log-enhancer)
 [![StyleCI](https://styleci.io/repos/126970369/shield?branch=master)](https://styleci.io/repos/126970369)
-[![Build Status](https://travis-ci.org/freshbitsweb/laravel-log-enhancer.svg?branch=master)](https://travis-ci.org/freshbitsweb/laravel-log-enhancer)
+[![Build Status](https://travis-ci.org/vaibhav/laravel-log-enhancer.svg?branch=master)](https://travis-ci.org/vaibhav/laravel-log-enhancer)
 
 # Laravel Log Enhancer (Laravel 5.6 to Laravel 5.8)
 Laravel's logging system helps a lot for storing data as well as while troubleshooting some hidden bugs. The data related to the exception automatically gets logged whenever something goes wrong.
@@ -10,7 +10,7 @@ Laravel's logging system helps a lot for storing data as well as while troublesh
 Sometimes, we need more than just *stack trace* to debug the issue easily. The things like **request URL**, **request input data**, **session data**, etc. help us hunt down the exact cause quickly. That's what this *plug-and-play* Laravel package does for you :)
 
 
-**Note**: For Laravel 5.5, you may use [Slack Error Notifier](https://github.com/freshbitsweb/slack-error-notifier) package.
+**Note**: For Laravel 5.5, you may use [Slack Error Notifier](https://github.com/vaibhav/slack-error-notifier) package.
 
 ## Requirements
 
@@ -21,14 +21,14 @@ Sometimes, we need more than just *stack trace* to debug the issue easily. The t
 
 1) Install the package by running this command in your terminal/cmd:
 ```
-composer require freshbitsweb/laravel-log-enhancer
+composer require vaibhav/laravel-log-enhancer
 ```
 
 2) Add this package's LogEnhancer class to the tap option of your log channel in **config/logging.php**:
 ```
 'production_stack' => [
     'driver' => 'stack',
-    'tap' => [Freshbitsweb\LaravelLogEnhancer\LogEnhancer::class],
+    'tap' => [vaibhav\LaravelLogEnhancer\LogEnhancer::class],
     'channels' => ['daily', 'slack'],
 ],
 ```
@@ -57,7 +57,7 @@ It has following configuration settings:
 
 * [**Gaurav Makhecha**](https://github.com/gauravmak) - *Initial work*
 
-See also the list of [contributors](https://github.com/freshbitsweb/laravel-log-enhancer/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/vaibhav/laravel-log-enhancer/graphs/contributors) who participated in this project.
 
 ## License
 
