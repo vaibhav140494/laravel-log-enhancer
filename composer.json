@@ -21,7 +21,9 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "vaibhav140494\\laravel-log-enhancer": "src/"
+            "App\\": "app/",
+            "vaibhav140494\\laravel-log-enhancer\\": "src/"
+
         }
     }
 }
